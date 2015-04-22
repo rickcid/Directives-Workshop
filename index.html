@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="directiveWorkshop">
 <head>
+  <link rel="stylesheet" href="style.css">
 	<title>My Directives</title>
 </head>
 <body ng-controller="mainCtrl">
 
 <div>
-<p>{{name}}</p>
-<show-pending></show-pending>
+<!--show-pending></show-pending--><!--I used this to test directive element 'elem', when not hidden-->
 
 <h2>pending</h2>
 	<form>
@@ -22,11 +22,10 @@
 		<input ng-model="title" placeholder="title"/>
 		<input ng-model="body" placeholder="body"/>
 		<input ng-model="icon" placeholder="iconUrl"/>
-		<button ng-click="">Submit</button> 
+		<button notify-box title="title" body="body" icon="icon">Submit</button> 
 	</form>
 </div>
-
-<div ></div>
+{{data.data.results}}
 
 <scripts>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
@@ -35,6 +34,7 @@
   <script type="text/javascript" src="js/mainCtrl.js"></script>
 	<script type="text/javascript" src="js/mainService.js"></script>
 	<script type="text/javascript" src="js/myDirectives.js"></script>
+  <script type="text/javascript" src="js/notifyDirective.js"></script>
 </scripts>
 
 </body>
