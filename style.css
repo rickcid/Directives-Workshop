@@ -1,0 +1,20 @@
+
+.popup {
+  float: right;
+  height: 100px;
+  width: 150px;
+  vertical-align: top;
+  padding: 25px;
+  background: rgba(32, 32, 32, .1);
+  color: gray;
+  border-radius: 12px;
+  border: 2px solid rgba(60, 60, 60, .1);
+  margin: 0;
+}
+
+.close {
+  float: right;
+  font-family: Avenir;
+  margin: -15px;
+  cursor: pointer;
+}
